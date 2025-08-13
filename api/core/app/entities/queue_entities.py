@@ -383,10 +383,6 @@ class QueueNodeSucceededEvent(AppQueueEvent):
     execution_metadata: Optional[Mapping[WorkflowNodeExecutionMetadataKey, Any]] = None
 
     error: Optional[str] = None
-    """single iteration duration map"""
-    iteration_duration_map: Optional[dict[str, float]] = None
-    """single loop duration map"""
-    loop_duration_map: Optional[dict[str, float]] = None
 
 
 class QueueAgentLogEvent(AppQueueEvent):
